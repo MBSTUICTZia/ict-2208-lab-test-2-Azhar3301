@@ -14,15 +14,15 @@ public class ShapeMain{
             String color = sc.next();
             boolean filled = sc.nextBoolean();
 
-            if(type.equals("RECTANGLE")){
-                double width = sc.nextDouble();
-                double length = sc.nextDouble();
-                shapes[i] = new Rectangle(color,filled, width, length);
-            }
-            else if(type.equals("CIRCLE")){
-                double radius = sc.nextDouble();
-                shapes[i] = new Circle(color, filled, radius);
-            }
+           if(type.equalsIgnoreCase("RECTANGLE")){
+    double width = sc.nextDouble();
+    double length = sc.nextDouble();
+    shapes[i] = new Rectangle(color,filled, width, length);
+}
+else if(type.equalsIgnoreCase("CIRCLE")){
+    double radius = sc.nextDouble();
+    shapes[i] = new Circle(color, filled, radius);
+}
         }
 
         for(Shape s:shapes){
