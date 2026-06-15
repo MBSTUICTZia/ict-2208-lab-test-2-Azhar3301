@@ -20,6 +20,8 @@ public class ShapeMain {
             Rectangle r = new Rectangle(color, filled, width, length);
 
             System.out.println(r);
+            System.out.printf("Area: %.2f%n", r.getArea());
+            System.out.printf("Perimeter: %.2f%n", r.getPerimeter());
 
         } else if (type.equalsIgnoreCase("circle")) {
 
@@ -28,6 +30,8 @@ public class ShapeMain {
             Circle c = new Circle(color, filled, radius);
 
             System.out.println(c);
+            System.out.printf("Area: %.2f%n", c.getArea());
+            System.out.printf("Perimeter: %.2f%n", c.getPerimeter());
         }
 
         sc.close();
