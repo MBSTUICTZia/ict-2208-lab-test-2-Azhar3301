@@ -28,12 +28,15 @@ public class ShapeMain {
             shape = new Circle(color, filled, radius);
 
         } else {
-            System.out.println("Invalid shape");
+
             sc.close();
             return;
         }
 
         System.out.println(shape);
+
+        System.out.printf("Area: %.2f%n", shape.getArea());
+        System.out.printf("Perimeter: %.2f%n", shape.getPerimeter());
 
         sc.close();
     }
