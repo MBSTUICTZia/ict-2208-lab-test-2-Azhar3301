@@ -1,0 +1,22 @@
+{
+  "tests": [
+    {
+      "name": "Rectangle test",
+      "setup": "javac -d . shapes/Shape.java shapes/Rectangle.java shapes/Circle.java shapes/ShapeMain.java",
+      "run": "echo 'rectangle Red true 5.0 3.0' | java shapes.ShapeMain",
+      "output": "[ shapes.Rectangle ]\nColor : Red\nFilled: Yes\nWidth : 5.0\nLength: 3.0\nArea      : 15.00\nPerimeter : 16.00\nArea: 15.00\nPerimeter: 16.00",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 50
+    },
+    {
+      "name": "Circle test",
+      "setup": "",
+      "run": "echo 'circle Blue false 7.0' | java shapes.ShapeMain",
+      "output": "[ Circle ]\nColor : Blue\nFilled: No\nRadius: 7.0\nArea         : 153.94\nCircumference: 43.98\nArea: 153.94\nPerimeter: 43.98",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 50
+    }
+  ]
+}
